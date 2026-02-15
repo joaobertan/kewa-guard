@@ -34,4 +34,4 @@ A API estará rodando em `http://localhost:3000`.
 ## 📖 Documentação de Uso
 
 Para Utilizar no projeto:
-👉 **[Leia a documentação oficial aqui](libs/kewa-guard/README.md)**
+👉 **[Leia a documentação oficial aqui](libs/kewa-guard/Readme.md)**
