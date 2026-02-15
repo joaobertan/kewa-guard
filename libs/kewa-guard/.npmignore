@@ -1,0 +1,6 @@
+tsconfig.build.json
+tsconfig.spec.json
+jest.config.ts
+.eslintrc.js
+*.spec.ts
+test/

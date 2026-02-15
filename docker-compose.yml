@@ -1,0 +1,18 @@
+services:
+  kewa-redis:
+    image: redis:8.6.0-alpine
+    container_name: kewa_redis_guard
+    ports:
+      - '6379:6379'
+    command: redis-server --appendonly yes
+    restart: always
+
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: kewa_redis_ui
+    environment:
+      - REDIS_HOSTS=local:kewa-redis:6379
+    ports:
+      - '8081:8081'
+    depends_on:
+      - kewa-redis

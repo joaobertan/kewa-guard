@@ -1,0 +1,1 @@
+export const KEWA_REDIS_CLIENT = 'REDIS_CLIENT';
