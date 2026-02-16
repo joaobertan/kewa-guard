@@ -1,6 +1,6 @@
 # 🛡️ Kewa Guard (Monorepo)
 
-Ambiente de desenvolvimento da biblioteca **@kewa/guard** (Rate Limiter Distribuído).
+Ambiente de desenvolvimento da biblioteca **@kewacode/guard** (Rate Limiter Distribuído).
 
 ## 📂 Onde estão as coisas?
 
