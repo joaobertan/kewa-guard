@@ -2,8 +2,8 @@
 
 > **Distributed Rate Limiter for NestJS using Redis & Sliding Window Algorithm.**
 
-[![NPM Version](https://img.shields.io/npm/v/@kewa/guard.svg)](https://www.npmjs.com/package/@kewa/guard)
-[![License](https://img.shields.io/npm/l/@kewa/guard.svg)](LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/@kewacode/guard.svg)](https://www.npmjs.com/package/@kewacode/guard)
+[![License](https://img.shields.io/npm/l/@kewacode/guard.svg)](LICENSE)
 [![NestJS](https://img.shields.io/badge/NestJS-10.x-red.svg)](https://nestjs.com/)
 
 **Kewa Guard** é uma biblioteca leve e performática para proteção de rotas em aplicações **NestJS**. Diferente de limitadores simples em memória, ele utiliza **Redis** com scripts **Lua** atômicos para garantir precisão absoluta em ambientes distribuídos (cluster/microservices).
@@ -21,11 +21,11 @@
 ## 📦 Instalação
 
 ```bash
-npm install @kewa/guard ioredis
+npm install @kewacode/guard ioredis
 # ou
-pnpm add @kewa/guard ioredis
+pnpm add @kewacode/guard ioredis
 # ou
-yarn add @kewa/guard ioredis
+yarn add @kewacode/guard ioredis
 ```
 
 ## ⚙️ Configuração
@@ -34,7 +34,7 @@ No seu `AppModule` (ou no módulo onde deseja usar o Rate Limiter), importe o `K
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { KewaGuardModule } from '@kewa/guard';
+import { KewaGuardModule } from '@kewacode/guard';
 
 @Module({
   imports: [
@@ -55,7 +55,7 @@ Para proteger uma rota, utilize o guard `KewaRateLimitGuard` e o decorator `@Kew
 
 ```typescript
 import { Controller, Get, UseGuards } from '@nestjs/common';
-import { KewaRateLimit, KewaRateLimitGuard } from '@kewa/guard';
+import { KewaRateLimit, KewaRateLimitGuard } from '@kewacode/guard';
 
 @Controller('cats')
 export class CatsController {
