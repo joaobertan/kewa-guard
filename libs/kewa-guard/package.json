@@ -1,6 +1,6 @@
 {
   "name": "@kewacode/guard",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Distributed Rate Limiter for NestJS using Redis",
   "author": "João Bertan",
   "license": "MIT",
